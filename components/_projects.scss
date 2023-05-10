@@ -1,0 +1,37 @@
+@import "./mixins";
+
+.projects__main {
+  @include twoColumns ($column-gap: 7.5rem, $row-gap: 7.5rem);
+  display: grid;
+}
+
+.projects__img {
+  max-width: 100%;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
+}
+
+.projects__data {
+  align-self: center;
+}
+
+.projects__description {
+  line-height: 1.8;
+}
+
+.projects__links {
+  color: var(--color-dark-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-medium);
+  margin-top: 1.3rem;
+  margin-right: 1rem;
+}
+
+.projects__links::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(/images/external-icon.png);
+  background-size: contain;
+  margin-left: .4rem;
+}

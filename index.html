@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.ico">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Ayman. M. Ali</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="video__loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4">
+      </video>
+      <!-- Start Header -->
+      <header class="header">
+        <label class="burger-menu" for="menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+        <input id="menu" class="burger-menu__checkbox" type="checkbox">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li><a href="#bio" class="navigation__link navigation__bio">Bio</a></li>
+            <li><a href="#skills" class="navigation__link navigation__skills">Skills</a></li>
+            <li><a href="#media" class="navigation__link navigation__media">Media</a></li>
+            <li><a href="#projects" class="navigation__link navigation__projects">Projects</a></li>
+            <li><a href="#clients" class="navigation__link navigation__clients">My client</a></li>
+            <li><a href="#contact" class="navigation__link navigation__contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch theme</h3>
+          <input type="checkbox" name="toggle checkbox" id="toggle" class="toggle__checkbox">
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Bio -->
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">Hi There, I'm A Passionate Front-end Developer</h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Ayman Mohammad Ali</span>, a Front-end developer who struggle to reach top level in this industry.
+            Find me on <a href="https://github.com/Ayman-M-Ali" class="bio__github">Github</a>, <a href="https://www.linkedin.com/in/ayman-mohammad-ali-7284021b1/" class="bio__linkedin">Linkedin</a>, and 
+            <a href="https://codepen.io/Ayman-M-A" class="bio__codepen">Codepen.</a>
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a href="./Ayman Mohammad Ali.pdf" class="bio__links find-out-link" target="_blank">Download cv <span class="bio__arrow">🠛</span></a>
+        </div>
+        <div class="bio__pic-content">
+          <img class="bio__pic" src="images/personal.pic.png" alt="Image of Ayman Mohammad Ali">
+        </div>
+      </section>
+      <!-- End Bio -->
+
+      <!-- Start Skills -->
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2__heading">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">4 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">4 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="skills__years">3 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+            <span class="skills__years">2 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills__years">2 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React Testing Library</h2>
+            <span class="skills__years">1 years</span>
+          </li>
+        </ul>
+      </section>
+      <!-- End Skills -->
+
+      <!-- Start Media -->
+      <section id="media" class="media section">
+        <video class= "media__video" poster="./images/thumbnail-1.jpg" controls>
+          <source src="./video.mp4" type="video/mp4">
+          <source src="./video.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <!-- End Media -->
+
+      <!-- Start Projects -->
+      <section id="projects" class="projects section">
+        <h2 class="h2__heading">My Projects</h2>
+        <div class="projects__main">
+          <img class="projects__img" src="/images/project-1.jpg" alt="Quran Tab Extention" />
+          <div class="projects__data">
+            <h3 class="h3__heading">Doob Agency</h3>
+            <p class="projects__description">
+              Doob is a Modern Multipurpose HTML5 Landing Page. Comes in modern, flat design with vibrant colors. Doob is fully responsive, it works great on all devices, any screen size, including desktops, laptops, tablets, and mobile phones.
+            </p>
+            <a href="https://ayman-m-ali.github.io/Doob-Agency/" class="projects__links" target="_blank">Doob Agency</a>
+            <a href="https://ayman-m-ali.github.io/Doob-Agency/" class="projects__links" target="_blank">Doob Agency</a>
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3__heading">Game Agency</h3>
+            <p class="projects__description">
+              Game Agency is a Modern Multipurpose HTML5 Landing Page. Comes in modern, flat design with vibrant colors. Doob is fully responsive, it works great on all devices, any screen size, including desktops, laptops, tablets, and mobile phones.
+            </p>
+            <a href="https://ayman-m-ali.github.io/Template-One/" class="projects__links" target="_blank">Game Agency</a>
+            <a href="https://ayman-m-ali.github.io/Template-One/" class="projects__links" target="_blank">Game Agency</a>
+          </div>
+          <img class="projects__img" src="/images/project-2.jpg" alt="Quran Tab Extention" />
+        </div>
+      </section>
+      <!-- End Projects -->
+
+      <!-- Start My Clients -->
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2__heading">What My <br> Clients says</h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients_opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At officiis enim animi, facere excepturi assumenda quis optio qui est doloribus quibusdam dolorem omnis dolorum incidunt reiciendis doloremque. Atque, sequi repellat!</p>
+            <p class="clients_opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At officiis enim animi, facere excepturi assumenda quis optio qui est doloribus quibusdam dolorem omnis dolorum incidunt reiciendis doloremque. Atque, sequi repellat!</p>
+            <p class="clients_opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At officiis enim animi, facere excepturi assumenda quis optio qui est doloribus quibusdam dolorem omnis dolorum incidunt reiciendis doloremque. Atque, sequi repellat!</p>
+          </div>
+        </div>
+      </section>
+      <!-- End My Clients -->
+
+      <!-- Start Contact -->
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time zones away.</p>
+          <a class="contact__email" href="mailto:ayman.mohmd.ali@gmail.com">ayman.mohmd.ali@gmail.com</a>
+          <div class="contact__socials">
+            <a href="https://github.com/Ayman-M-Ali" class="contact__social" target="_blank">
+              <img class="contact__img" src="/images/brand/github.svg" alt="Icon of github">
+            </a>
+            <a href="https://codepen.io/Ayman-M-A/pens/public" class="contact__social" target="_blank">
+              <img class="contact__img" src="/images/brand/codepen-svgrepo-com.svg" alt="Icon of codepen">
+            </a>
+            <a href="https://www.linkedin.com/in/ayman-mohammad-ali-7284021b1/" class="contact__social" target="_blank">
+              <img class="contact__img" src="/images/brand/LinkedIn.svg" alt="Icon of linkedin">
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__contactForm">
+          <h2 class="h2__heading">Let's Work <br> Together</h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input class="contact__input" type="text" name="fullName" placeholder="Full Name" required/>
+              <input class="contact__input" type="tel" name="telephone" placeholder="Phone No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+            </div>
+            <textarea class="contact__input contact__textarea" name="description" id="description" rows="1" placeholder="Your message ..." required></textarea>
+            <input class="contact__button" type="submit" value="Send Message"/>
+          </form>
+        </div>
+      </section>
+      <!-- End Contact -->
+
+      <footer class="footer">
+        <p class="footer__author">© 2023 by Ayman Mohammad Ali</p>
+        <div class="footer__contact">
+          <div class="footer__contact-info">
+            <i class="fa-solid fa-earth-asia location"></i>
+            <p>Syria, Aleppo</p>
+          </div>
+          <div class="footer__contact-info">
+            <i class="fa-solid fa-mobile-retro phone"></i>
+            <p>00352681121229</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
