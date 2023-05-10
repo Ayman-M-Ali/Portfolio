@@ -1,6 +1,6 @@
 # My Portfolio
 
-This is a project that I completed as part of [Almdrasa.com] (https://almdrasa.com/)
+This is a project that I completed as part of [Almdrasa.com](https://almdrasa.com/)
  coding challenge. The main goal of the project was to create a responsive website using HTML, CSS (BEM), Flexbox, CSS grid, and SASS.
 
 ## Technologies Used
@@ -36,4 +36,4 @@ Overall, this project was a great opportunity to practice my HTML, CSS, and SASS
 If you have any suggestions or find any bugs, please feel free to create a pull request or open an issue.
 
 ## Author
-[Ayman Mohammad Ali](https://github.com/Ayman-M-Ali)
+[Ayman Mohammad Ali] (https://github.com/Ayman-M-Ali)
