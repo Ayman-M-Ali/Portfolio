@@ -4,6 +4,13 @@
   }
 }
 
+/* For Laptop */
+@media (min-width: 800px) and (max-width: 1024px) {
+  :root {
+    --gutter: 1.8rem;
+  }
+}
+
 /* For Tablet */
 @media (max-width: 800px) {
   .container {
