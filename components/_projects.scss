@@ -1,8 +1,18 @@
 @import "./mixins";
 
 .projects__main {
-  @include twoColumns ($column-gap: 7.5rem, $row-gap: 7.5rem);
+  row-gap: 7.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-one,
+.project-two,
+.project-three {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 7.5rem;
+  column-gap: 7.5rem;
 }
 
 .projects__img {
@@ -24,7 +34,6 @@
   font-weight: var(--font-weight-medium);
   margin-top: 1.3rem;
   margin-right: 1rem;
-  text-decoration: underline;
 }
 
 .projects__links::after {

@@ -4,13 +4,6 @@
   }
 }
 
-/* For Laptop */
-@media (min-width: 800px) and (max-width: 1024px) {
-  :root {
-    --gutter: 1.8rem;
-  }
-}
-
 /* For Tablet */
 @media (max-width: 800px) {
   .container {
@@ -37,16 +30,22 @@
   }
 
   .projects__main {
-    grid-template-columns: 1fr;
     row-gap: 2rem;
     justify-items: center;
   }
 
+  .project-one,
+  .project-two,
+  .project-three {
+    grid-template-columns: 1fr;
+  }
+
   .projects__data {
+    margin-top: 3rem;
     margin-bottom: 5rem;
   }
 
-  .projects__data:nth-of-type(2) {
+  .project-two .projects__data {
     order: 1;
   }
 
