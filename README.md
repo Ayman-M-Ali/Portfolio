@@ -1,7 +1,7 @@
 # My Portfolio
 
 This is a project that I completed as part of [Almdrasa.com](https://almdrasa.com/)
- coding challenge. The main goal of the project was to create a responsive website using HTML, CSS (BEM), Flexbox, CSS grid, and SASS.
+ coding challenge. The main goal of the project was to create a responsive website using HTML, CSS (BEM), Flex box, CSS grid, and SASS.
 
 ## Technologies Used
 
