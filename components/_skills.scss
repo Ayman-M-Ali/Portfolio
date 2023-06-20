@@ -1,6 +1,10 @@
+#skills {
+  grid-template-columns: 1fr
+}
+
 .skills__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 3rem;
 }
 
@@ -22,4 +26,5 @@
   display: inline-block;
   font-size: var(--font-size-14);
   margin-top: .4rem;
+  margin-bottom: .8rem;
 }
