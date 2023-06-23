@@ -1,5 +1,10 @@
 @import "./mixins";
 
+form {
+  display: grid;
+  gap: 2rem;
+}
+
 .contact {
   @include twoColumns ($column-gap: 15rem, $row-gap: 0);
   align-items: center;
@@ -46,7 +51,6 @@
 
 .contact__textarea {
   width: 100%;
-  margin-top: 2rem;
 }
 
 .contact__button {
