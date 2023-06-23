@@ -14,11 +14,6 @@ javascriptItem.insertAdjacentHTML('afterend', ssString);
 
 //---
 
-const findOutLink = document.querySelector('.find-out-link');
-findOutLink.remove();
-
-//---
-
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = "26rem";
 
