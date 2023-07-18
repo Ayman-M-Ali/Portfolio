@@ -21,18 +21,3 @@ findOutLink.remove();
 
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = '26rem';
-
-//---
-const skillItem = document.querySelectorAll('.skills__item');
-const cbFunction = (item) => {
-  const activeElement = document.querySelector('.underline');
-
-  if (activeElement) {
-    activeElement.style.borderBottom = 'none';
-  }
-
-  item.style = 'border-bottom: 4px solid var(--color-text); width: fit-content';
-};
-skillItem.forEach((item) => {
-  item.addEventListener('click', () => cbFunction(item));
-});

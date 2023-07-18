@@ -11,7 +11,19 @@
 .skills__item {
   transition: var(--transition-timing);
   user-select: none;
+  // position: relative;
 }
+
+// .skills__item::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 4px;
+//   background-color: var(--color-green);
+//   visibility: hidden;
+//   }
 
 .skills__item:hover {
   text-shadow: 0 0 2px var(--color-green);
@@ -27,4 +39,45 @@
   font-size: var(--font-size-14);
   margin-top: .4rem;
   margin-bottom: .8rem;
+}
+
+.skills__item .underline {
+  content: "";
+  height: 0.6rem;
+  width: 60%;
+  background: var(--color-text);
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  visibility: visible;
+}
+
+.skills__filters {
+  grid-column: 1/-1;
+  margin: 0 0 5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skills__button {
+  border: 1px solid var(--color-text);
+  border-radius: 0.4rem;
+  padding: 0.2rem 1rem;
+  color: var(--color-text);
+
+
+  &--isActive {
+    background-color: var(--color-link-bg);
+    color: var(--color-white);
+    color: var(--color-background);
+  }
+}
+
+.skills__list.frontend li:not([data-type="frontend"]) {
+  display: none;
+}
+
+.skills__list.backend li:not([data-type="backend"]) {
+  display: none;
 }

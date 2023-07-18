@@ -127,32 +127,11 @@
       <!-- Start Skills -->
       <section id="skills" class="skills section section--with-bg">
         <h2 class="h2__heading">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__item" data-name="HTML">
-            <h2 class="skills__title">HTML</h2>
-            <span class="skills__years">4 years</span>
-          </li>
-          <li class="skills__item" data-name="CSS">
-            <h2 class="skills__title">CSS</h2>
-            <span class="skills__years">4 years</span>
-          </li>
-          <li class="skills__item" data-name="Javascript">
-            <h2 class="skills__title">JavaScript</h2>
-            <span class="skills__years">3 years</span>
-          </li>
-          <li class="skills__item" data-name="React">
-            <h2 class="skills__title">React</h2>
-            <span class="skills__years">2 years</span>
-          </li>
-          <li class="skills__item" data-name="Redux">
-            <h2 class="skills__title">Redux</h2>
-            <span class="skills__years">2 years</span>
-          </li>
-          <li class="skills__item" data-name="RTL">
-            <h2 class="skills__title">React Testing Library</h2>
-            <span class="skills__years">1 years</span>
-          </li>
-        </ul>
+        <div class="skills__filters">
+          <button class="skills__button skills__button--isActive" data-type="all">All</button>
+          <button class="skills__button" data-type="frontend">Frontend</button>
+          <button class="skills__button" data-type="backend">Backend</button>
+        </div>
       </section>
       <!-- End Skills -->
 
@@ -382,5 +361,6 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/add&replaceItems.js"></script>
     <script src="scripts/preventDefault.js"></script>
+    <script src="scripts/skillsDynamically.js"></script>
   </body>
 </html>
