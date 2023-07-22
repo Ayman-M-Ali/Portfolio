@@ -1,3 +1,4 @@
+// Add Skill Dynamically
 const skillsArray = [
   {
     name: 'HTML',
@@ -48,7 +49,7 @@ const skillsArray = [
 
 const skillsElement = document.querySelector('#skills');
 const currentYear = new Date().getFullYear();
-const generateListItem = (skillItem) => `<li class="skills__item underline" data-type=${skillItem.type} data-name=${skillItem.name}>
+const generateListItem = (skillItem) => `<li class="skills__item" data-type=${skillItem.type} data-name=${skillItem.name}>
   <h2 class="skills__title">${skillItem.name}</h2>
   <span class="skills__years">${currentYear - skillItem.experience} years</span>
 </li>`;
@@ -63,6 +64,21 @@ skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
 //----
 
+// const skillsItems = document.querySelectorAll('.skills__item');
+// const activeElement = document.querySelectorAll('.underline');
+
+// skillsItems.forEach((item) => {
+//   item.addEventListener('click', () => {
+//     if (activeElement) {
+//       activeElement.classList.remove('.underline');
+//     }
+//     item.classList.add('.underline');
+//   });
+// });
+
+//----
+
+// Add Filter Buttons
 document.querySelectorAll('.skills__button').forEach((element) => {
   element.addEventListener('click', () => {
     document.querySelector('.skills__button--isActive').classList.remove('skills__button--isActive');

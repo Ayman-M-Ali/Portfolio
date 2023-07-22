@@ -1,19 +1,21 @@
+// Resize Pic Pio
 const bioPic = document.querySelector('.bio__pic');
-bioPic.style.width = "26rem";
+bioPic.style.width = '26rem';
 
 //---
-
-const skillItem = document.querySelectorAll('.skills__item');
+// Add Skill Underline
+/* eslint-disable */
+const skillsList = document.querySelectorAll('.skills__list');
 const cbFunction = (skillItem) => {
   const activeElement = document.querySelector('.underline');
 
-  if(activeElement) {
-  activeElement.classList.remove('underline');
-  }
+    if (activeElement) {
+      activeElement.classList.remove('underline');
+    }
 
-  skillItem.classList.add('underline');
-  },
+    skillItem.classList.add('underline');
+  };
 
-skillItem.forEach((skillItem) => {
-skillItem.addEventListener("click", () => cbFunction(skillItem))
+skillsList.forEach((skillItem) => {
+  skillItem.addEventListener('click', () => cbFunction(skillItem));
 });
