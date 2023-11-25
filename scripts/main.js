@@ -1,3 +1,5 @@
+import { observeElements } from "./utilis";
+
 // Resize Pic Pio
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = '26rem';
@@ -19,3 +21,8 @@ const cbFunction = (skillItem) => {
 skillsList.forEach((skillItem) => {
   skillItem.addEventListener('click', () => cbFunction(skillItem));
 });
+
+// ObserveInterSections API 
+const sectionElements = document.querySelectorAll('section');
+
+observeElements(sectionElements);
