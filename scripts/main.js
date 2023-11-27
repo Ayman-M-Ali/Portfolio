@@ -1,4 +1,4 @@
-import { observeElements } from "./utilis";
+import { observeElements } from './utilis.js';
 
 // Resize Pic Pio
 const bioPic = document.querySelector('.bio__pic');
