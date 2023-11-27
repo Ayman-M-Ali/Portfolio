@@ -64,17 +64,17 @@ skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
 //----
 
-// const skillsItems = document.querySelectorAll('.skills__item');
-// const activeElement = document.querySelectorAll('.underline');
+ const skillsItems = document.querySelectorAll('.skills__item');
+ const activeElement = document.querySelectorAll('.underline');
 
-// skillsItems.forEach((item) => {
-//   item.addEventListener('click', () => {
-//     if (activeElement) {
-//       activeElement.classList.remove('.underline');
-//     }
-//     item.classList.add('.underline');
-//   });
-// });
+ skillsItems.forEach((item) => {
+   item.addEventListener('click', () => {
+     if (activeElement) {
+       activeElement.classList.remove('.underline');
+     }
+     item.classList.add('.underline');
+   });
+ });
 
 //----
 
