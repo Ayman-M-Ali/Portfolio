@@ -62,7 +62,7 @@ const unOrderList = `<ul class="skills__list">${skillItemsString}</ul>`;
 
 skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
-<<<<<<< HEAD
+
 //======================================
 =======
 //----
@@ -81,7 +81,7 @@ skillsItems.forEach((item) => {
     item.classList.add('skill-active');
   });
 });
-<<<<<<< HEAD
+
 =======
  // const skillsItems = document.querySelectorAll('.skills__item');
  // const activeElement = document.querySelectorAll('.underline');
@@ -94,7 +94,7 @@ skillsItems.forEach((item) => {
  //     item.classList.add('underline');
  //   });
  // });
->>>>>>> 53bc3c15343bbfa994f1ea7d800d6a65cb4082ca
+
 
 //=====================================
 
