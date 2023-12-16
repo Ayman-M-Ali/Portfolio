@@ -64,9 +64,7 @@ skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
 
 //======================================
-=======
 //----
->>>>>>> 53bc3c15343bbfa994f1ea7d800d6a65cb4082ca
 // Highlight Clicked Item
 const skillsItems = document.querySelectorAll('.skills__item');
 
@@ -82,7 +80,7 @@ skillsItems.forEach((item) => {
   });
 });
 
-=======
+//=======
  // const skillsItems = document.querySelectorAll('.skills__item');
  // const activeElement = document.querySelectorAll('.underline');
 
