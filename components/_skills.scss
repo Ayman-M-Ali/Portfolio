@@ -14,15 +14,13 @@
   user-select: none;
 }
 
-<<<<<<< HEAD
+
 .skill-active {
   width: 100%;
   background-color: var(--color-green);
   border-radius: 4px;
   }
 
-=======
->>>>>>> 53bc3c15343bbfa994f1ea7d800d6a65cb4082ca
 .skills__item:hover {
   text-shadow: 0 0 2px var(--color-green);
 }
@@ -45,8 +43,6 @@
   margin-bottom: .8rem;
 }
 
-<<<<<<< HEAD
-=======
 // .underline {
 //   content: "";
 //   height: 0.6rem;
@@ -57,7 +53,6 @@
 //   bottom: -20px;
 // }
 
->>>>>>> 53bc3c15343bbfa994f1ea7d800d6a65cb4082ca
 .skills__filters {
   grid-column: 1/-1;
   margin: 0 0 5rem;
