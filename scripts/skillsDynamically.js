@@ -64,17 +64,30 @@ skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
 //----
 
- const skillsItems = document.querySelectorAll('.skills__item');
- const activeElement = document.querySelectorAll('.underline');
+const skillsItems = document.querySelectorAll('.skills__item');
 
- skillsItems.forEach((item) => {
-   item.addEventListener('click', () => {
-     if (activeElement) {
-       activeElement.classList.remove('underline');
-     }
-     item.classList.add('underline');
-   });
- });
+skillsItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    skillsItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('skill-active');
+      }
+    });
+
+    item.classList.add('skill-active');
+  });
+});
+ // const skillsItems = document.querySelectorAll('.skills__item');
+ // const activeElement = document.querySelectorAll('.underline');
+
+ // skillsItems.forEach((item) => {
+ //   item.addEventListener('click', () => {
+ //     if (activeElement) {
+ //       activeElement.classList.remove('underline');
+ //     }
+ //     item.classList.add('underline');
+ //   });
+ // });
 
 //----
 
