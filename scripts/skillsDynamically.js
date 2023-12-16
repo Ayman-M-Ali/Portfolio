@@ -70,9 +70,9 @@ skillsElement.insertAdjacentHTML('beforeend', unOrderList);
  skillsItems.forEach((item) => {
    item.addEventListener('click', () => {
      if (activeElement) {
-       activeElement.classList.remove('.underline');
+       activeElement.classList.remove('underline');
      }
-     item.classList.add('.underline');
+     item.classList.add('underline');
    });
  });
 
