@@ -62,21 +62,23 @@ const unOrderList = `<ul class="skills__list">${skillItemsString}</ul>`;
 
 skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
-//----
+//======================================
+// Highlight Clicked Item
+const skillsItems = document.querySelectorAll('.skills__item');
 
-// const skillsItems = document.querySelectorAll('.skills__item');
-// const activeElement = document.querySelectorAll('.underline');
+skillsItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    skillsItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('skill-active');
+      }
+    });
 
-// skillsItems.forEach((item) => {
-//   item.addEventListener('click', () => {
-//     if (activeElement) {
-//       activeElement.classList.remove('.underline');
-//     }
-//     item.classList.add('.underline');
-//   });
-// });
+    item.classList.add('skill-active');
+  });
+});
 
-//----
+//=====================================
 
 // Add Filter Buttons
 document.querySelectorAll('.skills__button').forEach((element) => {
