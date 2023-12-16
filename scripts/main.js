@@ -4,9 +4,7 @@ import { observeElements } from './utilis.js';
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = '26rem';
 
-<<<<<<< HEAD
 //=========================================
-=======
 //---
 // Add Skill Underline
 /* eslint-disable */
@@ -24,7 +22,6 @@ bioPic.style.width = '26rem';
 //skillsList.forEach((skillItem) => {
 //  skillItem.addEventListener('click', () => cbFunction(skillItem));
 //});
->>>>>>> 53bc3c15343bbfa994f1ea7d800d6a65cb4082ca
 
 // ObserveInterSections API 
 const sectionElements = document.querySelectorAll('section');
