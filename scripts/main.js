@@ -27,3 +27,10 @@ bioPic.style.width = '26rem'
 const sectionElements = document.querySelectorAll('section');
 
 observeElements(sectionElements);
+
+// ======================================
+// Get Current Year in Footer
+let copyRightYear = document.querySelector('.footer__author');
+const currentYear = new Date().getFullYear();
+
+copyRightYear.innerHTML = `© ${currentYear} by Ayman Mohammad Ali`;
