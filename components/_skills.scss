@@ -1,7 +1,3 @@
-#skills {
-  grid-template-columns: 1fr;
-}
-
 .skills__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -17,19 +13,9 @@
 
 .skill-active {
   width: 100%;
-  background-color: var(--color-green);
+  background-color: var(--color-yellow);
   border-radius: 4px;
-  }
-
-.skills__item:hover {
-  text-shadow: 0 0 2px var(--color-green);
 }
-
-.skill-active {
-  width: 100%;
-  background-color: var(--color-green);
-  border-radius: 4px;
-  }
 
 .skills__title {
   font-size: var(--font-size-22);
@@ -43,16 +29,6 @@
   margin-bottom: .8rem;
 }
 
-// .underline {
-//   content: "";
-//   height: 0.6rem;
-//   width: 60%;
-//   background: var(--color-text);
-//   position: absolute;
-//   left: 0;
-//   bottom: -20px;
-// }
-
 .skills__filters {
   grid-column: 1/-1;
   margin: 0 0 5rem;
@@ -62,16 +38,16 @@
 }
 
 .skills__button {
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-secondary-text);
   border-radius: 0.4rem;
   padding: 0.2rem 1rem;
-  color: var(--color-text);
+  color: var(--color-secondary-text);
 
 
   &--isActive {
     background-color: var(--color-link-bg);
-    color: var(--color-white);
-    color: var(--color-background);
+    color: var(--color-secondary-text);
+    font-weight: 600;
   }
 }
 

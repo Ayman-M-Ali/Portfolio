@@ -18,18 +18,19 @@
 
 .bio__name {
   font-weight: var(--font-weight-semi-bold);
+  color: var(--color-yellow);
 }
 
-.bio__github {
-  color: var(--color-darker-blue);
-}
-
-.bio__linkedin {
-  color: var(--color-dark-blue);
-}
-
+.bio__github,
+.bio__linkedin,
 .bio__codepen {
-  color: var(--color-green);
+  color: #00ffce;
+}
+
+.bio__github:hover,
+.bio__linkedin:hover,
+.bio__codepen:hover {
+  color: var(--color-yellow);
 }
 
 .bio__links {
@@ -39,8 +40,8 @@
 }
 
 .say-hi-link {
-  background-color: var(--color-link-bg);
-  color: var(--color-white);
+  background-color: var(--color-yellow);
+  color: var(--color-secondary-text);
   padding: .4rem 1.8rem;
   border-radius: 3px;
 }

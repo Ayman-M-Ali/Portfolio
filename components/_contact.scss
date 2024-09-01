@@ -33,7 +33,7 @@ form {
   width: 2rem;
   padding: 0.1rem;
   margin-right: 0.3rem;
-  background-color: var(--color-green);
+  background-color: var(--color-yellow);
 }
 
 .contact__inputs {
@@ -46,11 +46,11 @@ form {
   outline: 0;
   flex: 1;
   background-color: transparent;
-  border-bottom: .1rem solid var(--color-input-border);
+  border-bottom: .1rem solid var(--color-yellow);
 }
 
 .border-bottom-input {
-  border-bottom: .1rem solid var(--color-green);
+  border-bottom: .1rem solid var(--color-foushi);
 }
 
 .contact__textarea {
@@ -60,7 +60,7 @@ form {
 .contact__button {
   border: 0;
   background-color: var(--color-link-bg);
-  color: var(--color-white);
+  color: var(--color-secondary-text);
   padding: .6rem 1.1rem;
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-16);

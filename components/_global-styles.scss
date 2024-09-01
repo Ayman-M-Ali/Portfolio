@@ -5,8 +5,8 @@ html {
 
 body {
   font-family: var(--font-family-raleway);
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-text);
   overflow-x: hidden;
 }
 
@@ -16,16 +16,6 @@ body {
   margin: 0 auto;
   max-width: calc(var(--container-width) + calc(var(--gutter) * 2));
   padding-inline: var(--gutter);
-}
-
-.video__loop {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: .08;
 }
 
 .section {
@@ -56,6 +46,7 @@ body {
 
 .section--with-bg {
   padding: 5rem 0;
+  color: var(--color-secondary-text);
 }
 
 .section--with-bg:before {
@@ -63,7 +54,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100vw;
-  background-color: var(--color-grey);
+  background-color: var(--color-secondary-background);
   justify-self: center;
   z-index: -1;
 }

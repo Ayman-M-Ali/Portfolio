@@ -1,21 +1,24 @@
-.header {
-  position: sticky;
+.header, 
+.footer {
+  position: relative;
   top: 0;
   padding: 1.5rem 0;
   display: flex;
   justify-content: center;
-  background-color: var(--color-background);
+  align-items: center;
+  background-color: var(--color-secondary-background);
+  color: var(--color-secondary-text);
   z-index: 1;
 }
 
-.header::before {
+.header::before, 
+.footer::before {
   content: "";
   position: absolute;
-  border-bottom: .1rem solid var(--color-input-border);
   width: 100vw;
   height: 100%;
   top: 0;
-  background-color: var(--color-background);
+  background-color: var(--color-secondary-background);
   z-index: -1;
 }
 
@@ -78,7 +81,7 @@
 .toggle__label {
   position: relative;
   display: block;
-  background-color: var(--color-black);
+  background-color: var(--color-primary-background);;
   border-radius: 4.5rem;
   width: 2.7rem;
   height: 1.5rem;
@@ -94,15 +97,15 @@
   height: .9rem;
   display: block;
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: var(--color-yellow);
   transition: var(--transition-timing);
 }
 
 .toggle__checkbox:checked + .toggle__label {
-  background-color: var(--color-white);
+  background-color: var(--color-primary-background);
 }
 
 .toggle__checkbox:checked + .toggle__label::before {
   transform: translateX(1.1rem);
-  background-color: var(--color-green);
+  background-color: var(--color-foushi);
 }

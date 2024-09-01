@@ -80,20 +80,6 @@ skillsItems.forEach((item) => {
   });
 });
 
-//=======
- // const skillsItems = document.querySelectorAll('.skills__item');
- // const activeElement = document.querySelectorAll('.underline');
-
- // skillsItems.forEach((item) => {
- //   item.addEventListener('click', () => {
- //     if (activeElement) {
- //       activeElement.classList.remove('underline');
- //     }
- //     item.classList.add('underline');
- //   });
- // });
-
-
 //=====================================
 
 // Add Filter Buttons
