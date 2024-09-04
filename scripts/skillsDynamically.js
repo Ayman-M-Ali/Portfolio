@@ -73,10 +73,12 @@ skillsItems.forEach((item) => {
     skillsItems.forEach((otherItem) => {
       if (otherItem !== item) {
         otherItem.classList.remove('skill-active');
+        otherItem.classList.remove('skills__button--isActive');
       }
     });
 
     item.classList.add('skill-active');
+    item.classList.add('skills__button--isActive');
   });
 });
 

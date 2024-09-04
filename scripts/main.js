@@ -1,6 +1,5 @@
 import { observeElements } from './utilis.js';
 
-
 // Save Theme on Local Storage
 const toggle = document.querySelector('.toggle__checkbox');
 
@@ -21,9 +20,8 @@ toggle.addEventListener('change', (e) => {
 // CSS should use the variable for theming
 document.documentElement.style.setProperty('--theme-color', initialTheme);
 
-//=========================================
-
-// Resize Pic Pio
+// =======================================
+  // Resize Pic Pio
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = '26rem'
 
