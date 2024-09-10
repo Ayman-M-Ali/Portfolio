@@ -21,7 +21,7 @@ toggle.addEventListener('change', (e) => {
 document.documentElement.style.setProperty('--theme-color', initialTheme);
 
 // =======================================
-  // Resize Pic Pio
+// Resize Pic Pio
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = '26rem'
 

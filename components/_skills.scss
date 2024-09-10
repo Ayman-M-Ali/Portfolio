@@ -37,7 +37,8 @@
   justify-content: center;
 }
 
-.skills__button {
+.skills__button,
+.projects__button {
   border: 1px solid var(--color-primary-text);
   border-radius: 0.4rem;
   padding: 0.2rem 1rem;

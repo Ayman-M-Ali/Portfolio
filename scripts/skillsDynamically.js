@@ -62,9 +62,7 @@ const unOrderList = `<ul class="skills__list">${skillItemsString}</ul>`;
 
 skillsElement.insertAdjacentHTML('beforeend', unOrderList);
 
-
 //======================================
-//----
 // Highlight Clicked Item
 const skillsItems = document.querySelectorAll('.skills__item');
 
