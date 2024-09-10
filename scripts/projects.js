@@ -36,7 +36,7 @@ const projects = [
     id: 5,
     title: 'Todo App',
     type: 'app',
-    img: '../images/todo-App.jpg',
+    img: './images/todo-App.jpg',
     alt: "Todo App",
     link: 'https://ayman-m-ali.github.io/Todo-App/',
   },
