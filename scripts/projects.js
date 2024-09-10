@@ -5,6 +5,7 @@ const projects = [
     title: 'Doob Agency',
     type: 'webpage',
     img: '../images/Doob-Agency.jpg',
+    alt: "Doob Agency",
     link: 'https://ayman-m-ali.github.io/Doob-Agency/',
   },
   {
@@ -12,6 +13,7 @@ const projects = [
     title: 'Game Agency',
     type: 'webpage',
     img: '../images/Game-Agency.jpg',
+    alt: "Game Agency",
     link: 'https://ayman-m-ali.github.io/Game-Agency/',
   },
   {
@@ -19,6 +21,7 @@ const projects = [
     title: 'VBN Landing Page',
     type: 'webpage',
     img: '../images/VBN-landing-page.jpg',
+    alt: "VBN Landing Page",
     link: 'https://ayman-m-ali.github.io/VBN-landing-page/',
   },
   {
@@ -26,6 +29,7 @@ const projects = [
     title: 'Image Slider',
     type: 'app',
     img: '../images/Image-Slider.jpg',
+    alt: "Image Slider",
     link: 'https://ayman-m-ali.github.io/Image-Slider/',
   },
   {
@@ -33,6 +37,7 @@ const projects = [
     title: 'Todo App',
     type: 'app',
     img: '../images/todo-App.jpg',
+    alt: "Todo App",
     link: 'https://ayman-m-ali.github.io/Todo-App/',
   },
   {
@@ -40,6 +45,7 @@ const projects = [
     title: 'Random Quotes Generator',
     type: 'app',
     img: '../images/Random-Quotes-Generator.jpg',
+    alt: "Random Quotes Generator",
     link: 'https://ayman-m-ali.github.io/Random-Quotes-Generator/',
   },
   {
@@ -47,6 +53,7 @@ const projects = [
     title: 'CC Profits',
     type: 'app',
     img: '../images/CC-Profits.jpg',
+    alt: "CC Profits",
     link: 'https://ayman-m-ali.github.io/CC-Profits/',
   },
   {
@@ -54,6 +61,7 @@ const projects = [
     title: 'Age Calculator',
     type: 'app',
     img: '../images/Age-Calculatror.jpg',
+    alt: "Age Calculator",
     link: 'https://ayman-m-ali.github.io/Age-Calculator/',
   },
 ];
@@ -62,7 +70,7 @@ const projectElement = document.querySelector('.projects__main');
 const generateListItem = (projectItem) => `<li class="projects__item" data-type= ${projectItem.type}>
   <img class="projects__img"
     src="${projectItem.img}"
-    alt="Doob Agency"
+    alt="${projectItem.alt}"
     loading="lazy"
   />
   <div class="projects__data">
