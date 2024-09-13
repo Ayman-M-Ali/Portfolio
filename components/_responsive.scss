@@ -2,6 +2,18 @@
   html {
     font-size: 8px;
   }
+  .projects__contain {
+    grid-template-columns: 1fr;
+  }
+  .projects__buttons {
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .projects__button {
+    width: 100px;
+  }
 }
 
 /* For Tablet */
@@ -29,24 +41,22 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .projects__main {
+  .projects__contain {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__list {
     row-gap: 2rem;
     justify-items: center;
   }
 
-  .project-one,
-  .project-two,
-  .project-three {
+  .project-item {
     grid-template-columns: 1fr;
   }
 
   .projects__data {
     margin-top: 3rem;
     margin-bottom: 5rem;
-  }
-
-  .project-two .projects__data {
-    order: 1;
   }
 
   .contact {
