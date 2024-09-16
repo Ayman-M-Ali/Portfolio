@@ -54,11 +54,6 @@
     grid-template-columns: 1fr;
   }
 
-  .projects__data {
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-  }
-
   .contact {
     row-gap: 2rem;
   }
@@ -136,7 +131,16 @@
     z-index: 1;
   }
 
+  .projects__filters {
+    justify-self: center;
+    width: 80%;
+  }
+
   .projects__button {
     width: 50px;
+  }
+
+  .projects__item {
+    width: 80%;
   }
 }
