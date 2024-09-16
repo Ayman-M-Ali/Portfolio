@@ -28,7 +28,7 @@ bioPic.style.width = '26rem'
 //=========================================
 
 // ObserveInterSections API 
-const sectionElements = document.querySelectorAll('section');
+const sectionElements = document.querySelectorAll('.section');
 
 observeElements(sectionElements);
 
