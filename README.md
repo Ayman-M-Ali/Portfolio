@@ -22,7 +22,19 @@ The following technologies were utilized in this project:
 
 ## Project Overview
 
-The website was designed with responsiveness in mind, so it looks great on all devices, from desktop computers to mobile phones. The use of Flexbox and CSS Grid helped to create a flexible and responsive layout that adapts to different screen sizes.
+You will discover:
+
+•  JavaScript modules.
+
+•  Intersection Observer API.
+
+•  Tap to Top Button.
+
+•  JavaScript Form Validation (high level).
+
+•  Integrate the form in the website with Formspree API to receive requests from students.
+
+•  View the optimal layout for the app depending on the device's screen size.
 
 ## Getting Started
 
