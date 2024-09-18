@@ -9,7 +9,7 @@
     <!-- Font Awesome Library -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +22,7 @@
     <title>Ayman. M. Ali</title>
   </head>
   <body>
+    <span class="tap-to-top"></span>
     <div class="container">
       <!-- Start Header -->
       <header class="header">
@@ -254,21 +255,20 @@
             Let's Work <br />
             Together
           </h2>
-          <form action="https://formspree.io/f/mvojpobz" method="POST">
+          <iframe name="hiddenFrame" class="hide"></iframe>
+          <form action="https://formspree.io/f/mvojpobz" method="POST" target="hiddenFrame">
             <div class="contact__inputs">
               <input
                 class="contact__input"
                 type="text"
                 name="fullName"
                 placeholder="Full Name"
-                required
               />
               <input
                 class="contact__input"
                 type="tel"
                 name="telephone"
                 placeholder="Phone No."
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
               />
             </div>
             <input
@@ -276,7 +276,6 @@
               type="email"
               name="email"
               placeholder="Your Email"
-              required
             />
             <textarea
               class="contact__input contact__textarea"
@@ -284,10 +283,10 @@
               id="description"
               rows="1"
               placeholder="Your message ..."
-              required
             ></textarea>
             <input class="contact__button" type="submit" value="Send Message" />
           </form>
+          <div class="show-error"></div>
         </div>
       </section>
       <!-- End Contact -->
@@ -306,10 +305,13 @@
       </footer>
     </div>
 
-    <script src="scripts/preventDefault.js" type="module"></script>
     <script src="scripts/skillsDynamically.js" type="module"></script>
-    <script src="scripts/utilis.js" type="module"></script>
     <script src="scripts/projects.js" type="module"></script>
+    <script src="scripts/interSectionObserver.js" type="module"></script>
+    <script src="scripts/tapToTop.js" type="module"></script>
+    <script src="scripts/elements.js" type="module"></script>
+    <script src="scripts/switchTheme.js" type="module"></script>
+    <script src="scripts/utilis.js" type="module"></script>
     <script src="scripts/main.js" type="module"></script>
   </body>
 </html>

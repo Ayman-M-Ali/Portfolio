@@ -1,0 +1,29 @@
+.tap-to-top {
+  display: grid;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 25px;
+  right: -50px;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: var(--color-yellow);
+  color: var(--color-secondary-text);
+  transition: var(--transition-timing);
+  z-index: 5;
+}
+.tap-to-top::before {
+  content: "\f077";
+  font-family: "FontAwesome";
+  position: relative;
+  top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-14);
+  font-weight: 800;
+  color: none
+}
+.tap-to-top.show {
+  right: 25px;
+}

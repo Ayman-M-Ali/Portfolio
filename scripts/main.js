@@ -1,36 +1,63 @@
-import { observeElements } from './utilis.js';
+import { tapToTop } from "./tapToTop.js";
+import { form, sectionElements } from "./elements.js";
+import { observerElements } from "./interSectionObserver.js";
+import { clearFormInputs, handleFormSubmit } from "./utilis.js";
+import { switchTheme } from "./switchTheme.js";
+import { addSkillsDynamically } from "./skillsDynamically.js";
+import { addProjectsDynamically } from "./projects.js";
 
-// Save Theme on Local Storage
-const toggle = document.querySelector('.toggle__checkbox');
 
-const defaultTheme = '#d4a736';
-const alternativeTheme = '#ef4f67';
-
-// Apply initial theme on page load
-const initialTheme = localStorage.getItem('theme') || defaultTheme; // Default theme
-document.documentElement.style.setProperty('--theme-color', initialTheme);
-toggle.checked = initialTheme === alternativeTheme; // Set checkbox state based on the saved theme
-
-toggle.addEventListener('change', (e) => {
-  const theme = e.target.checked ? alternativeTheme : defaultTheme; // Concise theme assignment based on checkbox state
-  localStorage.setItem('theme', theme);
-  document.documentElement.style.setProperty('--theme-color', theme); // Apply the theme
-});
-
-// CSS should use the variable for theming
-document.documentElement.style.setProperty('--theme-color', initialTheme);
+// Switch Theme with Local Storage
+switchTheme();
 
 // =======================================
+// Apply Accessibility For Switch Button 
+const toggleLabel = document.querySelector('.toggle__label');
+
+toggleLabel.addEventListener('keyup', (event) => {
+  if (event.key === 'Enter') {
+    event.currentTarget.click();
+  }
+});
+
+// ========================================
 // Resize Pic Pio
 const bioPic = document.querySelector('.bio__pic');
 bioPic.style.width = '26rem'
 
 //=========================================
+// Activate InterSectionObserver
+observerElements(sectionElements);
 
-// ObserveInterSections API 
-const sectionElements = document.querySelectorAll('.section');
+// =========================================
+// Tap To Top
+tapToTop();
 
-observeElements(sectionElements);
+// =========================================
+// Add Projects Dynamically
+addProjectsDynamically();
+
+// =========================================
+// Add Skills Dynamically
+addSkillsDynamically();
+
+// =========================================
+// Form Validation
+clearFormInputs(); // Function to clear the form inputs
+form.addEventListener("submit", handleFormSubmit); // Add event listener for form submission
+
+// ======================================
+// Add Border For Contact Input Form
+const contactInput = document.querySelectorAll('.contact__input');
+
+contactInput.forEach((input) => {
+  input.addEventListener('focus', (event) => {
+    event.target.classList.add('border-bottom-input');
+  });
+  input.addEventListener('blur', (event) => {
+    event.target.classList.remove('border-bottom-input');
+  });
+});
 
 // ======================================
 // Get Current Year in Footer
