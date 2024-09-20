@@ -46,7 +46,7 @@
 
 .projects__img {
   width: 100%;
-  border-radius: .2rem;
+  border-radius: .4rem;
   box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
   opacity: .6;
   transition: var(--transition-timing);
@@ -79,7 +79,7 @@
   border-radius: 3px;
   color: var(--color-secondary-text);
   font-family: var(--font-family-poppins);
-  font-weight: var(--font-weight-medium);
+  font-weight: 600;
   padding: 5px 10px;
   opacity: .9;
 }
