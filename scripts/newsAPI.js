@@ -1,7 +1,7 @@
 const apiKey = '3390bf511ce340d5ad6db41d58563f14';
 const url = `https://newsapi.org/v2/top-headlines?category=technology&pageSize=7&apiKey=${apiKey}`;
-// const cacheKey = 'programmingNews';
-// const cacheExpiry = 60 * 60 * 1000;
+const cacheKey = 'programmingNews';
+const cacheExpiry = 60 * 60 * 1000;
 
 export async function fetchProgrammingNews() {
   try {
