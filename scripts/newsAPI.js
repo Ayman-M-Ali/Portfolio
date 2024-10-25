@@ -1,22 +1,44 @@
+// const apiKey = '3390bf511ce340d5ad6db41d58563f14';
+// const url = `https://newsapi.org/v2/top-headlines?category=technology&pageSize=7&apiKey=${apiKey}`;
+// const cacheKey = 'programmingNews';
+// const cacheExpiry = 60 * 60 * 1000;
+
+// export async function fetchProgrammingNews() {
+//   try {
+//       const response = await fetch(url);
+//       console.log('Response Status:', response.status); // Log the status code
+//       if (!response.ok) {
+//           const errorText = await response.text(); // Log the error response
+//           throw new Error(`Network response was not ok: ${errorText}`);
+//       }
+//       const data = await response.json();
+//       displayNews(data.articles.slice(1, 7));  // Select only the first 6 articles
+//   } catch (error) {
+//       console.error('There has been a problem with your fetch operation:', error);
+//   }
+// }
+
+// Used Node.js for Server-Side Requests
+const fetch = require('node-fetch');
+
 const apiKey = '3390bf511ce340d5ad6db41d58563f14';
 const url = `https://newsapi.org/v2/top-headlines?category=technology&pageSize=7&apiKey=${apiKey}`;
-const cacheKey = 'programmingNews';
-const cacheExpiry = 60 * 60 * 1000;
 
-export async function fetchProgrammingNews() {
-  try {
-      const response = await fetch(url);
-      console.log('Response Status:', response.status); // Log the status code
-      if (!response.ok) {
-          const errorText = await response.text(); // Log the error response
-          throw new Error(`Network response was not ok: ${errorText}`);
-      }
-      const data = await response.json();
-      displayNews(data.articles.slice(1, 7));  // Select only the first 6 articles
-  } catch (error) {
-      console.error('There has been a problem with your fetch operation:', error);
-  }
+async function fetchProgrammingNews() {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Network response was not ok: ${response.status} - ${errorText}`);
+        }
+        const data = await response.json();
+        console.log(data.articles); // Handle your data here
+    } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    }
 }
+
+fetchProgrammingNews();
 
 function displayNews(articles) {
     const newsContainer = document.getElementById('news-container');
