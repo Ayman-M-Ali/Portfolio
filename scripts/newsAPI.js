@@ -6,8 +6,10 @@ const url = `https://newsapi.org/v2/top-headlines?category=technology&pageSize=7
 export async function fetchProgrammingNews() {
   try {
       const response = await fetch(url);
+      console.log('Response Status:', response.status); // Log the status code
       if (!response.ok) {
-          throw new Error('Network response was not ok');
+          const errorText = await response.text(); // Log the error response
+          throw new Error(`Network response was not ok: ${errorText}`);
       }
       const data = await response.json();
       displayNews(data.articles.slice(1, 7));  // Select only the first 6 articles
