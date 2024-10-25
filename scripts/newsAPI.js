@@ -42,7 +42,7 @@
 // }
 
 // const apiKey = '3390bf511ce340d5ad6db41d58563f14';
-const apiKey = 'ovm2SMwdMFGOFIuShyKdzjYZR7m2EVCutFyIapzH';
+const apiKey = '10742ed7bd4d5ef0efe8b3a97f009f29da6a66ee';
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const url = `${proxyUrl}https://newsapi.org/v2/top-headlines?category=technology&pageSize=7&apiKey=${apiKey}`;
 
