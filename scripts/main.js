@@ -5,6 +5,7 @@ import { clearFormInputs, handleFormSubmit } from "./utilis.js";
 import { switchTheme } from "./switchTheme.js";
 import { addSkillsDynamically } from "./skillsDynamically.js";
 import { addProjectsDynamically } from "./projects.js";
+import { fetchProgrammingNews } from "./newsAPI.js";
 
 
 // Switch Theme with Local Storage
@@ -36,6 +37,10 @@ tapToTop();
 // =========================================
 // Add Projects Dynamically
 addProjectsDynamically();
+
+// =========================================
+// Add News API
+fetchProgrammingNews();
 
 // =========================================
 // Add Skills Dynamically

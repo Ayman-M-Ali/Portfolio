@@ -30,6 +30,8 @@ You will discover:
 
 •  Tap to Top Button.
 
+•  Getting news using API.
+
 •  JavaScript Form Validation (high level).
 
 •  Integrate the form in the website with Formspree API to receive requests from students.
