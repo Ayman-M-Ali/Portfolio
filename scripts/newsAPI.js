@@ -62,7 +62,7 @@ function displayCodeforcesData(hacks) {
         const articleElement = document.createElement('div');
         articleElement.classList.add('news-article');
         articleElement.innerHTML = `
-          <img src="https://via.placeholder.com/150" alt="Hack Image" class="news-image">
+          <img src="https://picsum.photos/150" alt="Hack Image" class="news-image">
           <h3>Hack ID: ${hack.id}</h3>
           <p>Hacker: ${hack.hacker}</p>
           <small>Time: ${new Date(hack.time).toLocaleString('default', { month: 'numeric', year: 'numeric' })}</small>
