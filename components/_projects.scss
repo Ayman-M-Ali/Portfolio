@@ -48,12 +48,11 @@
   width: 100%;
   border-radius: .4rem;
   box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
-  opacity: .6;
   transition: var(--transition-timing);
 }
 
 .projects__img:hover {
-  opacity: 1;
+  opacity: .8;
   transform: scaleY(1.08);
 }
 
@@ -81,11 +80,9 @@
   font-family: var(--font-family-poppins);
   font-weight: 600;
   padding: 5px 10px;
-  opacity: .9;
 }
 
 .projects__links:hover {
   color: var(--color-secondary-text);
   background-color: var(--color-yellow);
-  opacity: 1;
 }
