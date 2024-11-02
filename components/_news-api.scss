@@ -7,14 +7,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.news-article {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: box-shadow 0.3s;
-}
-
 #news-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -29,12 +21,10 @@
 }
 
 .news-article {
-  max-height: 300px;
   border: 1px solid var(--color-yellow);
   border-radius: 8px;
   padding: 20px;
   transition: box-shadow var(--transition-timing);
-  overflow: hidden;
 }
 
 .news-article:hover {
