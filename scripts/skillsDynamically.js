@@ -2,48 +2,48 @@
 export const addSkillsDynamically = () => {
   const skillsArray = [
     {
-      name: 'HTML',
-      experience: '2019',
+      name: 'القانون المدني',
+      experience: '2011',
       type: 'frontend',
     },
     {
-      name: 'CSS',
-      experience: '2019',
+      name: 'قانون العقوبات',
+      experience: '2011',
       type: 'frontend',
     },
     {
-      name: 'Javascript',
-      experience: '2021',
+      name: 'قانون الأحوال الشخصية',
+      experience: '2011',
       type: 'frontend',
     },
     {
-      name: 'React',
-      experience: '2022',
+      name: 'أصول المحاكمات المدنية',
+      experience: '2011',
       type: 'frontend',
     },
     {
-      name: 'Redux',
-      experience: '2022',
+      name: 'أصول المحاكمات الجزائية',
+      experience: '2011',
       type: 'frontend',
     },
     {
-      name: 'React Testing Library',
-      experience: '2023',
+      name: 'قانون البينات',
+      experience: '2011',
       type: 'frontend',
     },
     {
-      name: 'Node.js',
-      experience: '2023',
+      name: 'القانون التجاري',
+      experience: '2018',
       type: 'backend',
     },
     {
-      name: 'Express.js',
-      experience: '2023',
+      name: 'قانون التحكيم',
+      experience: '2018',
       type: 'backend',
     },
     {
-      name: 'Mongodb',
-      experience: '2023',
+      name: 'قانون الأحوال المدنية',
+      experience: '2012',
       type: 'backend',
     },
   ];
