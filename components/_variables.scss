@@ -1,16 +1,14 @@
 :root {
-  --container-width: 75rem;
+  --container-width: 80rem;
   --gutter: 1.5rem;
-  --color-yellow: #d4a736;
-  --color-foushi: #ef4f67;
-  --color-primary-background: #023047;
-  --color-secondary-background: #219ebc;
+  --color-yellow: #fad666;//#f5f5dc;//#e76f51;
+  --color-primary-background: #292D33 ;
+  --color-secondary-background:#7FA7D5 ;
   --color-primary-text: #fff;
   --color-secondary-text: #222;
   --color-box-img: var(--color-yellow);
   --color-link-bg: var(--color-yellow);
   --color-input-border: var(--color-black);
-  --theme-color: var(--color-yellow); /* Default theme color */
   --font-family-raleway: "Raleway", sans-serif;
   --font-family-poppins: "Poppins", sans-serif;
   --font-weight-regular: 400;
@@ -31,5 +29,6 @@
   --font-size-14: 1.4rem;
   --font-size-12: 1.2rem;
   --font-size-10: 1rem;
+  --font-size-8: .8rem;
   --transition-timing: 0.3s;
 }

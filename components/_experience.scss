@@ -1,0 +1,123 @@
+@import "./mixins";
+
+.square,
+.square-two {
+  top: 2%;
+  left: 1.1%;
+  width: 25%;
+  height: 30%;
+  border: 3px solid var(--color-yellow);
+  position: absolute;
+}
+
+.square-two {
+  top: 5%;
+  left: 6%;
+  width: 30%;
+  height: 30%;
+}
+
+.experience .container,
+.skills .container,
+.rules .container,
+.news .container,
+.statistics .container,
+.features .container {
+  width: 100%;
+  flex-direction: column;
+  direction: rtl;
+  margin-bottom: 3rem
+}
+
+.experience__list { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.experience__img {
+  width: 100%;
+  border-radius: .4rem;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+  transition: var(--transition-timing);
+  margin-top: .5rem;
+  opacity: .6;
+}
+
+.experience__data {
+  transition: var(--transition-timing);
+}
+
+.experience__links {
+  position: relative;
+  text-align: center;
+  font-size: var(--font-size-14);
+  background-color: var(--color-primary-background);
+  border-radius: 3px;
+  color: var(--color-primary-text);
+  font-weight: 600;
+  padding: 10px 0 0;
+}
+
+.experience__links:hover {
+  color: var(--color-secondary-text);
+  background-color: var(--color-yellow);
+}
+
+.experience__links:hover .experience__img {
+  opacity: 1;
+}
+
+.experience__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--color-yellow);
+  color: var(--color-secondary-text);
+  padding: .2rem .4rem;
+  border-radius: 3px;
+  font-size: var(--font-size-10);
+  opacity: .6;
+}
+
+.experience__links:hover .experience__text {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup__content {
+  width: 75%;
+  background: var(--color-primary-background);
+  color: var(--color-primary-text);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.popup__content > h2 {
+  font-size: var(--font-size-20);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.popup__content > p {
+  font-size: var(--font-size-14);
+  line-height: 1.8;
+}
+.popup__close {
+  margin-top: 1rem;
+  padding: 5px 12px;
+  background: var(--color-yellow);
+  color: var(--color-secondary-text);
+  border-radius: 3px;
+}

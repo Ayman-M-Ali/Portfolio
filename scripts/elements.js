@@ -1,3 +1,5 @@
+export let numbers = document.querySelectorAll('.statistics__container .statistics__box');
+export let section = document.querySelector('.statistics');
 export const form = document.querySelector('form');
 export const theName = document.querySelector('.contact__input[type="text"]');
 export const email = document.querySelector('.contact__input[type="email"]');

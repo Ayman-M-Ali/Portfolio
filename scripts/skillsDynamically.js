@@ -2,92 +2,63 @@
 export const addSkillsDynamically = () => {
   const skillsArray = [
     {
-      name: 'القانون المدني',
-      experience: '2011',
-      type: 'frontend',
+      name: 'التمثيل أمام المحاكم',
+      text: 'الترافع أمام المحاكم هو أحد المهارات الأساسية التي يمتلكها المحامي المحترف. يتطلب ذلك قدرة على تحليل القضايا بدقة، وطرح الحجج القانونية بوضوح وثقة. نتمتع بمهارات تواصل فعالة، تساعدنا على التأثير في القرارات. إذا كنت تبحث عن تمثيل قانوني قوي، فأنت في المكان الصحيح.!',
     },
     {
-      name: 'قانون العقوبات',
-      experience: '2011',
-      type: 'frontend',
+      name: 'صياغة العقود القانونية',
+      text: 'هي فن يضمن وضوح الالتزامات وحماية الحقوق بين الأطراف. نقدّم خبرتنا لضبط البنود بدقة، بما يمنع النزاعات المستقبلية. بفضل الدقة والاحترافية، نحفظ حق موكلينا. فإن الصياغة القانونية المتقنة تمنح الثقة والامان.',
     },
     {
-      name: 'قانون الأحوال الشخصية',
-      experience: '2011',
-      type: 'frontend',
+      name: 'التحكيم التجاري والعقاري',
+      text: 'هو وسيلة فعالة لحل النزاعات بعيدًا عن تعقيدات المحاكم، مما يضمن سرعة الفصل وحفظ الحقوق. نقدم خبرتنا القانونية في إدارة جلسات التحكيم وتقديم الحجج القانونية. نجنب عملاءنا الإجراءات القضائية الطويلة والمكلفة، لا تتردد لتحقيق نتائج مرضية لك.',
     },
     {
-      name: 'أصول المحاكمات المدنية',
-      experience: '2011',
-      type: 'frontend',
+      name: 'الإستشارات المجانية',
+      text: 'الاستشارة المجانية تمنحك الفرصة لفهم حقوقك واتخاذ قرارات واعية دون أي تكلفة. نقدم خبرتنا لتحليل القضايا القانونية وتقديم توجيه دقيق موثوق ومُصمم وفق احتياجاتك ليساعدك على تجاوز التحديات بثقة. سواء كنت بحاجة إلى نصيحة في العقود، التحكيم، أو القضايا المدنية أو الجزائية أوغيرها',
     },
     {
-      name: 'أصول المحاكمات الجزائية',
-      experience: '2011',
-      type: 'frontend',
+      name: 'التراخيص',
+      text: 'مع التركيز على ضمان الامتثال للقوانين والتنظيمات المحلية والدولية نمتلك خبرة واسعة في إعداد الوثائق القانونية، والتفاوض، واستصدار الموافقات الرسمية بسرعة وكفاءة. نقدم استشارات عملية ومبتكرة لمساعدة العملاء على تحقيق أهدافهم التجارية بسلاسة. التزامنا بالدقة والاحترافية يجعلنا شريكًا موثوقًا في التعامل مع تعقيدات القوانين والإجراءات.',
     },
     {
-      name: 'قانون البينات',
-      experience: '2011',
-      type: 'frontend',
+      name: 'التدريب',
+      text: 'بفضل خبرتي الواسعة دربت أفراد ومنظمات عدة دولية ومحلية وطورت مهارات المشاركين الغير مختصين بالمعرفة اللازمة لمواجهة التحديات القانونية بكفاءة. أعمل على تصميم برامج تدريبية متخصصة تركز على المهارات العملية والمعرفة القانونية اللازمة لتحسين الأداء المهني .',
     },
     {
-      name: 'القانون التجاري',
-      experience: '2018',
-      type: 'backend',
+      name: 'العناية الواجبة',
+      text: 'نقدم خدمات التحقق من الملكيات القانونية لضمان صحة الوثائق وتوافقها مع القوانين بكل احترافية. أعمل على تدقيق شامل لكل التفاصيل، بما يضمن راحة بالك وحماية استثماراتك.  أساعدك على تجاوز تعقيدات القوانين بثقة، لتحقق أفضل النتائج بأسرع وقت. دع شراكتنا القانونية تكون مفتاح نجاحك!',
     },
     {
-      name: 'قانون التحكيم',
-      experience: '2018',
-      type: 'backend',
+      name: 'المحاكم الإدارية',
+      text: 'كخبراء نساعدك من خلال استشارات شاملة وتمثيل قوي في المحاكم لحماية حقوقك ومصالحك ضد الجهات الحكومية. سواء كنت بحاجة إلى إعداد طعون أو مذكرات قانونية، التزامنا بالتميز والكفاءة يضمن لك نتائج فعالة تضعك دائمًا في موقف قوة لتحقيق أفضل النتائج القانونية.',
     },
     {
-      name: 'قانون الأحوال المدنية',
-      experience: '2012',
-      type: 'backend',
+      name: 'الأبحاث القانونية',
+      text: 'نقدم أبحاثًا قانونية دقيقة ومبتكرة تعزز موقفك القانوني وتدعم قراراتك بثقة. بكل ما نملك من خبرة نحلل القوانين ونستكشف الحلول العملية لكل قضية، مما يوفر لك رؤى قانونية عميقة مصممة خصيصًا لتلبية احتياجاتك. التزامنا بالدقة والتفرد يجعلك دائمًا في المقدمة، ويضمن لك أفضل النتائج.',
+    },
+    {
+      name: 'إعداد الأنظمة واللوائح',
+      text: 'معرفتنا ومهاراتنا تساعد المؤسسات والشركات على بناء إطار قانوني قوي يدعم أهدافها التنظيمية. نقدم استشارات مبتكرة لصياغة لوائح داخلية فعالة تضمن الامتثال وتعزز الأداء. نعمل على تصميم حلول قانونية تناسب احتياجاتك الخاصة. دعنا نساعدك في خلق بيئة عمل آمنة ومزدهرة.',
     },
   ];
   
-  const skillsElement = document.querySelector('#skills');
-  const currentYear = new Date().getFullYear();
+  const skillsElement = document.querySelector('#skills .container');
   const generateListItem = (skillItem) => `<li class="skills__item" data-type=${skillItem.type} data-name=${skillItem.name}>
     <h2 class="skills__title">${skillItem.name}</h2>
-    <span class="skills__years">${currentYear - skillItem.experience} years</span>
+    <p class="skills__text">${skillItem.text}</p>
   </li>`;
   
   const skillItemsString = skillsArray
     .map((skillItem) => generateListItem(skillItem))
     .join('');
   
-  const unOrderList = `<ul class="skills__list">${skillItemsString}</ul>`;
+  const unOrderList = `<ul class="skills__list">${skillItemsString}</ul>
+                        <button class="skills toggle__title">
+                          <i class="fa-regular fa-phone phone"></i>
+                          <a href="https://wa.me/+963965056014?text=مرحبا أستاذ أيمن، لدي استشارة لو سمحت" target="_blank"> استشر خبيراً 00963965056014</a>
+                        </button>`;
   
   skillsElement.insertAdjacentHTML('beforeend', unOrderList);
-  
-  //======================================
-  // Highlight Clicked Item
-  const skillsItems = document.querySelectorAll('.skills__item');
-  
-  skillsItems.forEach((item) => {
-    item.addEventListener('click', () => {
-      skillsItems.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem.classList.remove('skill-active');
-          otherItem.classList.remove('skills__button--isActive');
-        }
-      });
-  
-      item.classList.add('skill-active');
-      item.classList.add('skills__button--isActive');
-    });
-  });
-  
-  //=====================================
-  // Add Filter Buttons
-  document.querySelectorAll('.skills__button').forEach((element) => {
-    element.addEventListener('click', () => {
-      document.querySelector('.skills__button--isActive').classList.remove('skills__button--isActive');
-      element.classList.add('skills__button--isActive');
-      document.querySelector('.skills__list').classList = `skills__list ${element.dataset.type}`;
-    });
-  });  
 }
+

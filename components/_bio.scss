@@ -1,35 +1,74 @@
-@import "./mixins";
+#bio {
+  position: relative;
+}
 
-.bio {
-  @include twoColumns ($column-gap: 7.5rem, $row-gap: 0)
+#bio::before,
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url(/images/Law.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+#bio::after,
+#contact::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary-background);
+  width: 100%;
+  height: 100vh;
+  opacity: .7;
+}
+
+#contact::after {
+  height: 100%;
+}
+
+.bio .container,
+.contact .container {
+  margin: 3rem auto;
+  gap: 10rem;
+  z-index: 2;
 }
 
 .bio__heading {
-  font-size: var(--font-size-48);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-32);
+  text-align: center;
 }
 
 .bio__objective {
-  font-size: var(--font-size-14);
+  font-size: var(--font-size-18);
   font-family: var(--font-family-poppins);
-  font-weight: var(--font-weight-regular);
-  margin: 2.4rem 0 2.7rem;
+  margin: 2rem 0 2.7rem;
+  text-align: center;
 }
 
 .bio__name {
   font-weight: var(--font-weight-semi-bold);
-  color: var(--color-yellow);
+  font-size: var(--font-size-22);
+  background-color: var(--color-yellow);
+  color: var(--color-secondary-text);
+  padding: .1rem .7rem;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
-.bio__github,
+.bio__fb,
 .bio__linkedin,
 .bio__codepen {
   color: #00ffce;
 }
 
+.bio__linkedin {
+  display: inline;
+}
+
 .bio__github:hover,
-.bio__linkedin:hover,
-.bio__codepen:hover {
+.bio__linkedin:hover {
   color: var(--color-yellow);
 }
 
@@ -76,25 +115,11 @@
   }
 }
 
-.bio__pic-content {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  justify-self: end;
-}
-
-.bio__pic-content::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 75%;
-  border-radius: 1rem;
-  background-color: var(--color-box-img);
-  z-index: -1;
-  box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.3);
-}
-
 .bio__pic {
-  width: 28rem;
-  border-radius: 1rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-yellow);
+}
+
+.bio__pic-content {
+  align-content: center;
 }

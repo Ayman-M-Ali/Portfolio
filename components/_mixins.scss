@@ -1,5 +1,18 @@
 @mixin twoColumns ($column-gap: 7.5rem, $row-gap: 0) {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1fr, 1fr);
   column-gap: $column-gap;
   row-gap: $row-gap;
+}
+
+@mixin threeColumns($display: grid, $gap: 0, $margin: 0) {
+  display: $display;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $gap;
+  margin: $margin;
+}
+
+@mixin text($font-size: 0, $font-weight: 0, $color: none) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
 }

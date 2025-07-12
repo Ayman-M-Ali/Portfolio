@@ -1,0 +1,62 @@
+@import "./mixins";
+
+.statistics {
+  grid-template-columns: 1fr;
+}
+
+.statistics__container {
+  @include threeColumns($display: grid, $gap: 1rem);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.statistics__box {
+  @include text($font-size: 1.5rem, $font-weight: 600, $color: var(--color-secondary-text));
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border: 1px solid var(--color-primary-background);
+  transform: skew(-5deg);
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+  border-radius: 3px;
+}
+
+.statistics__box + p {
+  @include text($font-size: 1.5rem, $font-weight: 600, $color: var(--text-primary-color));
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.statistics__box::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background: var(--color-yellow);
+  opacity: .8;
+  z-index: -1;
+  transition: all .5s ease;
+}
+
+.statistics__box:hover::before {
+  width: 100%;
+}
+
+.statistics .toggle__title,
+.skills .toggle__title {
+  margin: auto;
+  flex-direction: row-reverse;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  transition: var(--transition-timing);
+}
+
+.statistics .toggle__title:hover {
+  background-color: var(--color-primary-background);
+  color: var(--color-yellow);
+}
+
+.skills .toggle__title:hover {
+  background-color: var(--color-secondary-background);
+  color: var(--color-secondary-text);
+}

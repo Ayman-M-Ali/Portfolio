@@ -3,21 +3,29 @@
 form {
   display: grid;
   gap: 2rem;
+  direction: rtl;
 }
 
-.contact {
-  @include twoColumns ($column-gap: 15rem, $row-gap: 0);
-  align-items: center;
+#contact {
+  position: relative;
 }
 
-.contact__description {
-  font-size: var(--font-size-14);
-  line-height: 1.8;
+#contact::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/pexels-pavel-danilyuk-8112136.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-.contact__email {
-  font-weight: var(--font-weight-bold);
-  margin: 1.5rem 0;
+.contact .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
 }
 
 .contact__social {
@@ -28,12 +36,24 @@ form {
   transform: scale(1.2);
 }
 
-.contact__img {
+.contact__social__img {
   border-radius: 50%;
   width: 2rem;
   padding: 0.1rem;
-  margin-right: 0.3rem;
+  margin-left: .5rem;
   background-color: var(--color-yellow);
+}
+
+.contact .h2__heading {
+  margin: 0 0 2rem;
+  line-height: 1.4;
+  font-size: var(--font-size-24);
+}
+
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.4;
+  margin-bottom: .5rem;
 }
 
 .contact__inputs {
@@ -48,6 +68,7 @@ form {
   color: var(--color-primary-text);
   background-color: transparent;
   border-bottom: .1rem solid var(--color-yellow);
+  direction: rtl;
 }
 
 .border-bottom-input {
@@ -69,6 +90,10 @@ form {
   margin-top: 2rem;
   cursor: pointer;
   border-radius: 3px;
+}
+
+.contact__button:hover {
+  background: var(--color-secondary-background);
 }
 
 .show-error {

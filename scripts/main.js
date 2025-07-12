@@ -1,32 +1,13 @@
 import { tapToTop } from "./tapToTop.js";
-import { form, sectionElements } from "./elements.js";
+import { form, numbers, section, sectionElements } from "./elements.js";
 import { observerElements } from "./interSectionObserver.js";
 import { clearFormInputs, handleFormSubmit } from "./utilis.js";
-import { switchTheme } from "./switchTheme.js";
 import { addSkillsDynamically } from "./skillsDynamically.js";
-import { addProjectsDynamically } from "./projects.js";
-import { fetchProgrammingNews } from "./newsAPI.js";
+import { addExperienceDynamically } from "./experience.js";
+import { showPopupDetailsLinks } from "./experience.js";
+import { countingAutoWhenScroll } from "./statistics.js";
 
 
-// Switch Theme with Local Storage
-switchTheme();
-
-// =======================================
-// Apply Accessibility For Switch Button 
-const toggleLabel = document.querySelector('.toggle__label');
-
-toggleLabel.addEventListener('keyup', (event) => {
-  if (event.key === 'Enter') {
-    event.currentTarget.click();
-  }
-});
-
-// ========================================
-// Resize Pic Pio
-const bioPic = document.querySelector('.bio__pic');
-bioPic.style.width = '26rem'
-
-//=========================================
 // Activate InterSectionObserver
 observerElements(sectionElements);
 
@@ -35,16 +16,33 @@ observerElements(sectionElements);
 tapToTop();
 
 // =========================================
-// Add Projects Dynamically
-addProjectsDynamically();
+// Add experience Dynamically
+addExperienceDynamically();
 
 // =========================================
-// Add News API
-fetchProgrammingNews();
+// Add Popup
+showPopupDetailsLinks()
 
 // =========================================
 // Add Skills Dynamically
 addSkillsDynamically();
+
+// =========================================
+// Start Counting Automatically When scrolling
+let started = false;
+
+window.addEventListener("scroll", () => {
+  if (section && window.scrollY >= section.offsetTop - 250) {
+    if (!started) {
+      numbers.forEach(num => {
+        if (num) {
+          countingAutoWhenScroll(num);
+        }
+      });
+      started = true;
+    }
+  }
+});
 
 // =========================================
 // Form Validation
@@ -66,7 +64,7 @@ contactInput.forEach((input) => {
 
 // ======================================
 // Get Current Year in Footer
-let copyRightYear = document.querySelector('.footer__author');
+let copyRightYear = document.querySelector('.copy-right');
 const currentYear = new Date().getFullYear();
 
-copyRightYear.innerHTML = `© ${currentYear} by <span>Ayman Mohammad Ali</span>`;
+copyRightYear.innerHTML = `سند للمحاماة والاستشارات القانونية © 2011 -${currentYear}`;

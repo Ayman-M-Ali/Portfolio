@@ -11,17 +11,16 @@ body {
 }
 
 .container {
-  display: grid;
-  row-gap: 5rem;
+  display: flex;
   margin: 0 auto;
-  max-width: calc(var(--container-width) + calc(var(--gutter) * 2));
-  padding-inline: var(--gutter);
+  padding: var(--gutter);
+  max-width: calc(var(--container-width) + var(--gutter) * 2);
+  position: relative;
 }
 
 .section {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, auto);
   align-items: start;
   opacity: 0;
   transform: translateY(1rem);
@@ -45,7 +44,6 @@ body {
 
 
 .section--with-bg {
-  padding: 5rem 0;
   color: var(--color-secondary-text);
 }
 
@@ -53,28 +51,20 @@ body {
   content: "";
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: var(--color-secondary-background);
-  justify-self: center;
-  z-index: -1;
 }
 
 .h2__heading {
   font-size: var(--font-size-40);
   font-weight: var(--font-weight-bold);
-  grid-column: 1/-1;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
+  margin: 2rem 0 4rem 0;
 }
 
 a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 button {

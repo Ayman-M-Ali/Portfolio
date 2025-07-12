@@ -1,11 +1,11 @@
 <!-- My Portfolio -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/android-chrome-512x512.png" />
     <!-- Font Awesome Library -->
     <link
       rel="stylesheet"
@@ -19,306 +19,341 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Ayman. M. Ali</title>
+    <title>سند</title>
   </head>
   <body>
     <span class="tap-to-top"></span>
-    <div class="container">
-      <!-- Start Header -->
-      <header class="header">
+    <!-- Start Header -->
+    <header class="header">
+      <div class="container">
         <label class="burger-menu" for="menu">
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
         </label>
+        <a class="logo" href="#bio"><img src="/images/سند.webp" alt=""></a>
+        <div class="toggle">
+          <button class="toggle__title">
+            <i class="fa-regular fa-phone phone"></i>
+            <a href="https://wa.me/+963965056014?text=مرحبا أستاذ أيمن، لدي استشارة لو سمحت" target="_blank">اتصل بنا 00963965056014</a>
+          </button>
+        </div>
         <input id="menu" class="burger-menu__checkbox" type="checkbox" />
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
-              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+              <a href="#bio" class="navigation__link navigation__bio">الرئيسية</a>
             </li>
             <li>
-              <a href="#projects" class="navigation__link navigation__projects"
-              >Projects</a
+              <a href="#experience" class="navigation__link navigation__skills"
+                >خبراتنا</a
               >
             </li>
             <li>
-              <a href="#media" class="navigation__link navigation__media"
-              >Media</a
+              <a href="#skills" class="navigation__link navigation__media"
+                >خدماتنا</a
               >
             </li>
             <li>
-              <a href="#skills" class="navigation__link navigation__skills"
-                >Skills</a
+              <a href="#rules" class="navigation__link navigation__experience"
+                >اجتهادات</a
               >
             </li>
             <li>
-              <a href="#clients" class="navigation__link navigation__clients"
-                >My client</a
+              <a href="#statistics" class="navigation__link navigation__statistics"
+                >إنجازاتنا</a
               >
             </li>
             <li>
               <a href="#contact" class="navigation__link navigation__contact"
-                >Contact</a
+                >تواصل معنا</a
               >
             </li>
           </ul>
         </nav>
-        <div class="toggle">
-          <h3 class="toggle__title">Switch theme</h3>
-          <input
-            type="checkbox"
-            id="toggle"
-            class="toggle__checkbox"
-            data-theme="#d4a736"
-          />
-          <label
-            for="toggle"
-            class="toggle__label"
-            role="button"
-            tabindex="0"
-          ></label>
-        </div>
-      </header>
+      </div>
+    </header>
       <!-- End Header -->
       <!-- Start Bio -->
       <section id="bio" class="bio section">
+        <div class="container">
         <div class="bio__data">
           <h1 class="bio__heading">
-            Hi There, I'm A Passionate Front-end Developer
+          نحمي حقك ونرشدك بخبرة قانونية<br>تضمن لك العدالة
           </h1>
           <p class="bio__objective">
-            My name is <span class="bio__name">Ayman Mohammad Ali</span>, a
-            Front-end developer who struggle to reach top level in this
-            industry. Find me on
+            <span class="bio__name">المحامي والمستشار أيمن محمد علي</span><br>
+            مع خبرة تمتد لأكثر من 15 عاماً نقدم الاستشارات والخدمات القانونية في مجالات عدة كالعقود والعقارات والعقوبات والأحوال الشخصية والشركات وغيرها من القضايا الصعبة والمعقدة 
+            <br>يمكنك متابعتي على
             <a
-              href="https://github.com/Ayman-M-Ali"
-              class="bio__github"
+              href="https://www.facebook.com/ayman.mohammadali.311"
+              class="bio__fb"
               target="_blank"
-              >Github</a
-            >,
+              >فيسبوك</a
+            > و
             <a
               href="https://www.linkedin.com/in/ayman-mohammad-ali-7284021b1/"
               class="bio__linkedin"
               target="_blank"
-              >Linkedin</a
-            >, and
-            <a
-              href="https://codepen.io/Ayman-M-A"
-              class="bio__codepen"
-              target="_blank"
-              >Codepen.</a
+              >لينكدان</a
             >
           </p>
-          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a href="#contact" class="bio__links say-hi-link">احجز استشارتك المجانية <span class="bio__arrow">🠛</span></a>
           <a
             href="./Ayman-Mohammad-Ali.pdf"
             class="bio__links find-out-link"
             target="_blank"
-            >Download cv <span class="bio__arrow">🠛</span></a
+            >من أكون ؟</a
           >
         </div>
         <div class="bio__pic-content">
           <img
             class="bio__pic"
-            src="images/personal.pic.webp"
+            src="images/personal.pic5.webp"
             alt="Image of Ayman Mohammad Ali"
             loading="lazy"
           />
         </div>
+      </div>
       </section>
       <!-- End Bio -->
-      <!-- Start Projects -->
-      <section id="projects" class="projects section section--with-bg">
-        <h2 class="h2__heading">My Projects</h2>
-        <div class="projects__contain">
-          <div class="projects__filters">
-            <h3 class="heading__projects-filter">Filter by:</h3>
-            <div class="projects__buttons">
-              <button
-                class="projects__button projects__button--isActive"
-                data-type="all"
-              >
-                All
-              </button>
-              <button class="projects__button" data-type="webpage">Pages</button>
-              <button class="projects__button" data-type="app">Apps</button>
-            </div>
-          </div>
-          <div class="projects__main">
-          </div> 
+      <!-- Start experience -->
+      <section id="experience" class="experience section section--with-bg">
+        <div class="square"></div>
+        <div class="square-two"></div>
+        <div class="container">
+          <h2 class="h2__heading">خبرتنا القانونية</h2>
+          <div class="experience__contain"></div>
         </div>
       </section>
-      <!-- End Projects -->
-      <!-- Start news API -->
-      <section id="codeforces-container" class="news section">
-        <h2 class="h2__heading">News API</h2>
-        <div id="news-container"></div>
-      </section>
-      <!-- End news API -->
-      <!-- Start Media -->
-      <section id="media" class="media section">
-        <video class="media__video" poster="./images/thumbnail-1.jpg" controls>
-          <source src="./video.mp4" type="video/mp4" />
-          <source src="./video.webm" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </section>
-      <!-- End Media -->
+      <!-- End experience -->
       <!-- Start Skills -->
       <section id="skills" class="skills section">
-        <h2 class="h2__heading">Skills</h2>
-        <div class="skills__filters">
-          <button
-            class="skills__button skills__button--isActive"
-            data-type="all"
-          >
-            All
-          </button>
-          <button class="skills__button" data-type="frontend">Frontend</button>
-          <button class="skills__button" data-type="backend">Backend</button>
+        <div class="container">
+          <h2 class="h2__heading">الخدمات التي نقدمها</h2>
         </div>
       </section>
       <!-- End Skills -->
-      <!-- Start My Clients -->
-      <section id="clients" class="clients section section--with-bg">
-        <h2 class="h2__heading">
-          What My <br />
-          Clients says
-        </h2>
-        <div class="clients__opinions">
-          <div class="clients__wrapper">
-            <p class="clients_opinion">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-              officiis enim animi, facere excepturi assumenda quis optio qui est
-              doloribus quibusdam dolorem omnis dolorum incidunt reiciendis
-              doloremque. Atque, sequi repellat!
-            </p>
-            <p class="clients_opinion">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-              officiis enim animi, facere excepturi assumenda quis optio qui est
-              doloribus quibusdam dolorem omnis dolorum incidunt reiciendis
-              doloremque. Atque, sequi repellat!
-            </p>
-            <p class="clients_opinion">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-              officiis enim animi, facere excepturi assumenda quis optio qui est
-              doloribus quibusdam dolorem omnis dolorum incidunt reiciendis
-              doloremque. Atque, sequi repellat!
-            </p>
+      <!-- Start rules -->
+      <section id="rules" class="rules section section--with-bg">
+        <div class="square"></div>
+        <div class="square-two"></div>
+        <div class="container">
+          <h2 class="h2__heading">اجتهادات محكمة النقض</h2>
+          <div class="rules-container">
+            <div class="generation-rules">
+              <div id="rule-box"></div>
+              <button class="generateButton">احصل على اجتهاد آخر</button>
+            </div>
+            <div class="rules-image">
+              <img src="/images/hammer-802296_1280.webp" alt="">
+            </div>
           </div>
         </div>
       </section>
-      <!-- End My Clients -->
-      <!-- Start Contact -->
-      <section id="contact" class="contact section">
-        <div>
-          <p class="contact__description">
-            Feel free to reach out to me any time. I prefer to talk over email,
-            especially since we may be a few time zones away.
-          </p>
-          <a class="contact__email" href="mailto:ayman.mohmd.ali@gmail.com"
-            >ayman.mohmd.ali@gmail.com</a
-          >
-          <div class="contact__socials">
-            <a
-              href="https://github.com/Ayman-M-Ali"
-              class="contact__social"
-              target="_blank"
-            >
-              <img
-                class="contact__img"
-                src="images/brand/github.svg"
-                alt="Icon of github"
-              />
-            </a>
-            <a
-              href="https://codepen.io/Ayman-M-A/pens/public"
-              class="contact__social"
-              target="_blank"
-            >
-              <img
-                class="contact__img"
-                src="images/brand/codepen-svgrepo-com.svg"
-                alt="Icon of codepen"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ayman-mohammad-ali-7284021b1/"
-              class="contact__social"
-              target="_blank"
-            >
-              <img
-                class="contact__img"
-                src="images/brand/LinkedIn.svg"
-                alt="Icon of linkedin"
-              />
-            </a>
+      <!-- End rules -->
+      <!-- Start features -->
+      <section id="features" class="features section">
+        <div class="container">
+          <h2 class="h2__heading">بماذا نتميز؟</h2>
+          <div class="features-container">
+            <div class="features-box vision">
+              <div class="features__heading-icon">
+                <img src="/images/Vission.webp" alt="">
+                <h3 class="features__heading">رؤيتنا:</h3>
+              </div>
+              <p class="features__text">تتمثل رؤيتنا بمساعدة الأشخاص والهيئات الاعتبارية على حفظ حقوقهم واستخدام هذه الحقوق على نحو سليم وعدم الإضرار بحقوق الآخرين.</p>
+            </div>
+            <div class="features-box mission">
+              <div class="features__heading-icon">
+                <img src="/images/Mission.webp" alt="">
+                <h3 class="features__heading">رسالتنا:</h3>
+              </div>
+              <p class="features__text">توفير الحلول القانونية الأفضل من خلال التمثيل القانوني الاحترافي، نساعد موكلينا للوصول لحقوقهم القانونية.<br>نسعى من خلال احترافنا القانوني للمحافظة على سمعتنا الطيبة وتطويرها من خلال ثقة موكلينا بأدائنا القانوني وبناء سجل مليء بالانجازات مما يؤدي للمحافظة على مكانتنا المرموقة.</p>
+            </div>
+            <div class="features-box principles">
+              <div class="features__heading-icon">
+                <img src="/images/Principles.webp" alt="">
+                <h3 class="features__heading">قيمنا ومبادؤنا:</h3>
+              </div>
+              <ul>
+                <div class="feature__principle">
+                  <i class="fa-solid fa-check check-feature"></i>
+                  <li class="features__text">النزاهة والمصداقية.</li>
+                </div>
+                <div class="feature__principle">
+                  <i class="fa-solid fa-check check-feature"></i>
+                  <li class="features__text">السرية والشفافية.</li>
+                </div>
+                <div class="feature__principle">
+                  <i class="fa-solid fa-check check-feature"></i>
+                  <li class="features__text">الاحترافية والمهنية.</li>
+                </div>
+                <div class="feature__principle">
+                  <i class="fa-solid fa-check check-feature"></i>
+                  <li class="features__text">الريادة والإبداع.</li>
+                </div>
+                <div class="feature__principle">
+                  <i class="fa-solid fa-check check-feature"></i>
+                  <li class="features__text">التخصص والجودة.</li>
+                </div>
+                <div class="feature__principle">
+                  <i class="fa-solid fa-check check-feature"></i>
+                  <li class="features__text">سرعة الإستجابة مع فهم دقيق للتفاصيل.</li>
+                </div>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="contact__contactForm">
-          <h2 class="h2__heading">
-            Let's Work <br />
-            Together
-          </h2>
-          <iframe name="hiddenFrame" class="hide"></iframe>
-          <form action="https://formspree.io/f/mvojpobz" method="POST" target="hiddenFrame">
-            <div class="contact__inputs">
-              <input
-                class="contact__input"
-                type="text"
-                name="fullName"
-                placeholder="Full Name"
-              />
-              <input
-                class="contact__input"
-                type="tel"
-                name="telephone"
-                placeholder="Phone No."
-              />
+      </section>
+      <!-- End features -->
+      <!-- Start statistics -->
+      <section id="statistics" class="statistics section section--with-bg">
+        <div class="container">
+          <h2 class="h2__heading">إنجازاتنا</h2>
+          <div class="statistics__container">
+            <div>
+              <div class="statistics__box" data-goal="2370">0</div>
+              <p>الاستشارات المقدمة</p>
             </div>
-            <input
-              class="contact__input"
-              type="email"
-              name="email"
-              placeholder="Your Email"
-            />
-            <textarea
-              class="contact__input contact__textarea"
-              name="description"
-              id="description"
-              rows="1"
-              placeholder="Your message ..."
-            ></textarea>
-            <input class="contact__button" type="submit" value="Send Message" />
-          </form>
-          <div class="show-error"></div>
+            <div>
+              <div class="statistics__box" data-goal="15">0</div>
+              <p>سنوات الخبرة</p>
+            </div>
+            <div>
+              <div class="statistics__box" data-goal="97">0</div>
+              <p>معدل النجاح</p>
+            </div>
+            <div>
+              <div class="statistics__box" data-goal="1143">0</div>
+              <p>العملاء</p>
+            </div>
+          </div>
+          <button class="statistics toggle__title">
+            <i class="fa-regular fa-phone phone"></i>
+            <a href="https://wa.me/+963965056014?text=مرحبا أستاذ أيمن، لدي استشارة لو سمحت" target="_blank"> استشر خبيراً 00963965056014</a>
+          </button>
+        </div>
+      </section>
+      <!-- End statistics -->
+      <!-- Start Contact -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <div>
+            <p class="contact__description">
+              لن تحتاج لرفع دعوى إذا كانت مشكلتك يمكن حلها عن طريق استشارة فقط.
+              <br>نحن هنا لمساعدتك
+            </p>
+            <a
+                href="https://www.facebook.com/ayman.mohammadali.311"
+                class="contact__social"
+                target="_blank"
+              >
+                <img
+                  class="contact__social__img"
+                  src="images/brand/facebook.svg"
+                  alt="Icon of facebook"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ayman-mohammad-ali-7284021b1/"
+                class="contact__social"
+                target="_blank"
+              >
+                <img
+                  class="contact__social__img"
+                  src="images/brand/LinkedIn.svg"
+                  alt="Icon of linkedin"
+                />
+            </a>
+          </div>
+          <div class="contact__contactForm">
+            <h2 class="h2__heading">
+              هل تحتاج الى المساعدة؟ <br />
+              لا تتردد، تواصل معنا
+            </h2>
+            <iframe name="hiddenFrame" class="hide"></iframe>
+            <form action="https://formspree.io/f/mvojpobz" method="POST" target="hiddenFrame">
+              <div class="contact__inputs">
+                <input
+                  class="contact__input"
+                  type="text"
+                  name="fullName"
+                  placeholder="الاسم الكامل"
+                />
+                <input
+                  class="contact__input"
+                  type="tel"
+                  name="telephone"
+                  placeholder="رقم الجوال"
+                />
+              </div>
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                placeholder="الايميل"
+              />
+              <textarea
+                class="contact__input contact__textarea"
+                name="description"
+                id="description"
+                rows="1"
+                placeholder="اكتب رسالتك ..."
+              ></textarea>
+              <input class="contact__button" type="submit" value="Send Message" />
+            </form>
+            <div class="show-error"></div>
+          </div>
         </div>
       </section>
       <!-- End Contact -->
       <footer class="footer">
-        <p class="footer__author"></p>
-        <div class="footer__contact">
-          <div class="footer__contact-info">
-            <i class="fa-solid fa-earth-asia location"></i>
-            <p>Syria, Aleppo</p>
+        <div class="container">
+          <div class="footer_info">
+            <div class="footer__socials">
+              <img src="images/سند.webp" class="image_logo" alt="Bar Association">
+            </div>
+            <div>
+              <h3 class="footer__author">سند للمحاماة والإستشارات القانونية</h3>
+              <p>سند هي واحدة من الشركات الرائدة في مجال المحاماة والاستشارات القانونية حيث نؤمن بأهمية النزاهة والاحترافية في كل ما نقوم به، ونسعى لبناء علاقات طويلة الأمد مع عملائنا من خلال تقديم استشارات قانونية دقيقة وحلول مبتكرة للوصول إلى أفضل النتائج.</p>
+            </div>
           </div>
-          <div class="footer__contact-info">
-            <i class="fa-solid fa-mobile-retro phone"></i>
-            <p>00352681121229</p>
+          <div class="related_links"><h3>روابط ذات صلة</h3>
+            <div class="footer__links">
+              <a class="footer__link" href="https://www.facebook.com/MOJ.SYR/">وزارة العدل</a>
+              <a class="footer__link" href="https://syrianbar.com/">نقابة المحامين</a>
+              <a class="footer__link" href="https://moct.gov.sy/%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9">خدمات الحكومة الإلكترونية</a>
+            </div>
+          </div>
+          <div class="footer_info">
+            <h3>معلومات التواصل</h3>
+            <div class="footer__contact-info">
+              <i class="fa-solid fa-earth-asia location"></i>
+              <p>سوريا - حلب - بستان الزهرة - جانب كازية الباش - بناية  الباش ط2</p>
+            </div>
+            <div class="footer__contact-info">
+              <i class="fa-solid fa-mobile-retro phone"></i>
+              <p>00352681139587</p>
+            </div>
+            <div class="footer__contact-info">
+              <i class="fa-solid fa-envelope"></i>
+              <a class="contact__email" href="mailto:ayman.mohmd.ali@gmail.com">
+                ayman.mohmd.ali@gmail.com</a>
+            </div>
           </div>
         </div>
+        <p class="copy-right"></p>
       </footer>
-    </div>
 
     <script src="scripts/skillsDynamically.js" type="module"></script>
-    <script src="scripts/projects.js" type="module"></script>
+    <script src="scripts/experience.js" type="module"></script>
     <script src="scripts/interSectionObserver.js" type="module"></script>
     <script src="scripts/tapToTop.js" type="module"></script>
+    <script src="scripts/rules.js" type="module"></script>
     <script src="scripts/newsAPI.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="scripts/statistics.js" type="module"></script>
     <script src="scripts/elements.js" type="module"></script>
-    <script src="scripts/switchTheme.js" type="module"></script>
     <script src="scripts/utilis.js" type="module"></script>
     <script src="scripts/main.js" type="module"></script>
   </body>
