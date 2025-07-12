@@ -12,7 +12,7 @@ export const addExperienceDynamically = () => {
       id: 2,
       title: 'القانون الجزائي',
       type: 'القوانين',
-      img: '/images/القانون-الجزائي.webp',
+      img: '../images/القانون-الجزائي.webp',
       alt: "القانون الجزائي",
     },
     {
