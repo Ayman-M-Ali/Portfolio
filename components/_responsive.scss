@@ -71,7 +71,6 @@
   .bio .container  {
     flex-direction: column-reverse;
     gap: 3rem;
-    margin-top: 8rem;
   }
 
   .bio__pic-content {
@@ -148,9 +147,7 @@
   .skills__list,
   .features-container,
   .statistics__container {
-    width: 80%;
     row-gap: 2rem;
-    margin: auto;
   }
 
   .experience__links {
