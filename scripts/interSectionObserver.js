@@ -1,5 +1,5 @@
 export const observerElements = (sectionElements) => {
-  const options = { threshold: .2 }
+  const options = { threshold: .3 }
 
   const callback = (entries) => {
     entries.forEach(entry => {
