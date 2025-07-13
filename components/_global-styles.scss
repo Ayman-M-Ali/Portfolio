@@ -16,6 +16,7 @@ body {
   padding: var(--gutter);
   max-width: calc(var(--container-width) + var(--gutter) * 2);
   position: relative;
+  overflow: hidden;
 }
 
 .section {
