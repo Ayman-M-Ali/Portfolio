@@ -148,6 +148,7 @@
   .features-container,
   .statistics__container {
     row-gap: 2rem;
+    grid-template-columns: 1fr;
   }
 
   .experience__links {
