@@ -1,22 +1,23 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-family-raleway);
   background-color: var(--color-primary-background);
   color: var(--color-primary-text);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   margin: 0 auto;
   padding: var(--gutter);
+  width: 100%;
   max-width: calc(var(--container-width) + var(--gutter) * 2);
   position: relative;
-  overflow: hidden;
 }
 
 .section {

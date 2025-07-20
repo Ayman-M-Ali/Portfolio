@@ -1,5 +1,10 @@
 .header .container {
   padding: 0 var(--gutter);
+  justify-content: space-between;
+}
+
+.header_logo-contact {
+  display: flex;
 }
 
 .header, 
@@ -79,8 +84,4 @@
   height: 80px;
   margin-left: .5rem;
   display: flex;
-}
-
-.logo img {
-  width: 100%;
 }
