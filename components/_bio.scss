@@ -39,11 +39,18 @@
   text-align: center;
 }
 
-.bio__objective {
-  font-size: var(--font-size-18);
+.bio__objective,
+.bio__objective-goal {
+  font-size: var(--font-size-16);
   font-family: var(--font-family-poppins);
-  margin: 2rem 0 2.7rem;
+  margin: 0 0 2.7rem;
   text-align: center;
+  line-height: 1.6;
+}
+
+.bio__objective-goal {
+  margin: 1rem 0 0;
+  font-size: var(--font-size-18);
 }
 
 .bio__name {
@@ -54,7 +61,7 @@
   padding: .1rem .7rem;
   border-radius: 3px;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 .bio__fb,
