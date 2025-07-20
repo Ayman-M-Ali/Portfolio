@@ -111,6 +111,7 @@
 
   .navigation__link {
     height: 35px;
+    padding: 0 10px;
   }
 
   .header:has(.burger-menu__checkbox:checked) .navigation {
